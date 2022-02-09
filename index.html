@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta meta name="viewport" content="width=device-width" charset="utf-8">
+    <title>Foodigo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="src\style.css">
+    <script src="https://kit.fontawesome.com/9abb9e2eb2.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&display=swap" rel="stylesheet">
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body>
+    <div class="loader-wrapper">
+      <div class="loader">
+        <div class="loader-fills">
+        </div>
+      </div>
+     </div>
+    <section class="navContainer">
+      <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#homeSection" style="color:#d9534f">Foodigo</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0"> -->
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#homeSection">Home</a>
+              </li>
+              <li class="nav-item aboutslink">
+                <a class="nav-link" href="#aboutSection">About</a>
+              </li>
+              <li class="nav-item abouterlink">
+                <a class="nav-link" href="#abouterSection">About</a>
+              </li>
+              <li class="nav-item mobmenuslink">
+                <a class="nav-link" href="#mobmenuSection">Menus</a>
+              </li>
+              <li class="nav-item testslink">
+                <a class="nav-link" href="#testimonialSection">Testimonials</a>
+              </li>
+              <li class="nav-item mobtestslink">
+                <a class="nav-link" href="#mobtestSection">Testimonials</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <section class="homeSection" id="homeSection">
+      <div class="topContainer">
+        <div class="topContent gencol">
+          <h1 data-aos="zoom-in" data-aos-duration="600">Food<span class="secondaryColor mainigo">igo</span></h1>
+          <h3 data-aos="fade-up" data-aos-duration="700">Restaurants and more, delivered to your door.</h3>
+          <br>
+          <button class="btn btn-danger topBtn" type="button" name="button" data-aos="fade-up" data-aos-duration="750"><a class="home-link" href="#aboutSection">Order Online</a></button>
+          <button class="btn btn-danger topBtn top2Btn" type="button" name="button" data-aos="fade-up" data-aos-duration="750"><a class="home-link" href="#abouterSection">Order Online</a></button>
+        </div>
+      </div>
+    </section>
+    <section class="aboutSection" id="aboutSection">
+      <div class="aboutContainer">
+        <div class="abouts">
+          <h4 data-aos="fade-up" data-aos-duration="200">How it works</h4>
+          <h1 data-aos="fade-up" data-aos-duration="300"> <span class="primaryColor">Simple 3 Steps!</span></h1>
+        </div>
+        <br>
+        <div class="aboutrow row">
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+            <div class="feature" data-aos="fade-up" data-aos-duration="400">
+              <h3>No minimum Order</h3>
+              <img src="src\Images\about1.jpg" alt="">
+              <p>Order in for yourself or for the group, with no restrictions on order value</p>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+            <div class="feature" data-aos="fade-up" data-aos-duration="500">
+              <h3>Live Order Tracking</h3>
+              <img src="src\Images\about2.png" alt="">
+              <p>Know where your order is at all times, from the restaurant to your doorstep</p>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+            <div class="feature" data-aos="fade-up" data-aos-duration="600">
+              <h3>SuperFast Delivery</h3>
+              <img src="src\Images\about3.jpg" alt="">
+              <p>Experience Foodsite's superfast delivery for food delivered fresh & on time</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="mob-about abouterSection" id="abouterSection">
+      <div class="abouterContainer">
+        <div class="abouts">
+          <h4 data-aos="fade-up" data-aos-duration="250">How it works</h4>
+          <h1 data-aos="fade-up" data-aos-duration="450"> <span class="primaryColor">Simple 3 Steps!</span></h1>
+          <button class="btn btn-danger startCarousel" type="button" name="button" onclick="aboutCarousel()" data-aos="zoom-in" data-aos-duration="600"><i class="fas fa-arrow-circle-right"></i></button>
+        </div>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="feature">
+                <h3>No minimum Order</h3>
+                <img src="src\Images\about1.jpg" alt="">
+                <br>
+                <p>Order in for yourself or for the group, with no restrictions on order value</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="feature">
+                <h3>Live Order Tracking</h3>
+                <img src="src\Images\about2.png" alt="">
+                <br>
+                <p>Know where your order is at all times, from the restaurant to your doorstep</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="feature">
+                <h3>Lightning-Fast Delivery</h3>
+                <img src="src\Images\about3.jpg" alt="">
+                <br>
+                <p>Experience Foodsite's superfast delivery for food delivered fresh & on time</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="mobmenuContainer" id="mobmenuSection">
+      <div class="mobfoodigomenusContainer row">
+        <div class="mobmenuheaders">
+          <h4 data-aos="fade-up" data-aos-duration="350">Trending Menus</h4>
+          <h1 data-aos="fade-up" data-aos-duration="500"> <span class="primaryColor" style="font-size:smaller">Menu that always make you fall in love</span></h1>
+        </div>
+        <div class="mobmenusContainer">
+          <div class="mobtrend-wrapper">
+            <div class="item row" data-aos="fade-up" data-aos-duration="400">
+              <div class="col-5">
+                <p class="mobdeal">Deal of the day!</p>
+                <img src="src\Images\mobtrend1.png" alt="">
+              </div>
+              <div class="col-7">
+                <p style="margin-bottom:0px">GRAB</p>
+                <h4>60% OFF</h4>
+                <h6>Oh my <span class="biryani">Biryani!</span> </h6>
+                <p style="color:#000">Starting at ₹109</p>
+              </div>
+            </div>
+            <div class="item row" data-aos="fade-up" data-aos-duration="650">
+              <div class="col-5">
+                <img src="src\Images\mobtrend2.png" alt="">
+                <img src="" alt="">
+              </div>
+              <div class="col-7">
+                <p style="margin-bottom:0px">GRAB</p>
+                <h4>Pizza<span style="color:#000">House</span></h4>
+                <h4 class="menuhomesep" style="background-color:#142F43">40% OFF</h4>
+                <h6>Code: BIGSAVE</h6>
+              </div>
+            </div>
+            <div class="item row" data-aos="fade-up" data-aos-duration="850">
+              <div class="col-5">
+                <img src="src\Images\mobtrend3.png" alt="">
+              </div>
+              <div class="col-7">
+                <p style="margin-bottom:0px">BUY ONE</p>
+                <h4 style="font-weight:bolder;color:#d9534f">GET ONE</h4>
+                <h6 class="primaryColor" style="font-size:small"><span class="menuhomesep">Dessert Paradise</span></h6>
+                <p style="font-size:xx-small">on select items*</p>
+              </div>
+            </div>
+            <div class="item row" data-aos="fade-up" data-aos-duration="950">
+              <div class="col-5">
+                <img src="src\Images\moboffers.png" alt="">
+              </div>
+              <div class="col-7">
+                <p style="margin-bottom:0px">and</p>
+                <h6 class="primaryColor" style="font-size:small">Lot more Exciting offers!</h6>
+                <!-- <button class="btn btn-danger explore-btn" type="button" name="button">Explore</button> -->
+                <a href="#exploreSection" class="menuhomesep explore-a" style="text-decoration:none;">Explore</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mobexploreContainer mob-explore">
+          <div class="mobmenuExplore">
+            <div class="mob-exploretop" data-aos="zoom-in" data-aos-duration="150">
+              <h3>Eat what makes you happy</h3>
+            </div>
+            <div class="mobexplore-wrapper">
+              <div class="mobexplorerow row" data-aos="fade-up" data-aos-duration="250">
+                <div class="mobitem col">
+                  <img src="src\Images\dosas.png" alt="">
+                  <p>Dosa</p>
+                </div>
+                <div class="mobitem col">
+                  <img src="src\Images\bread.png" alt="">
+                  <p>Breakfast</p>
+                </div>
+                <div class="mobitem col">
+                  <img src="src\Images\arabic.png" alt="">
+                  <p>Starters</p>
+                </div>
+              </div>
+              <br>
+              <div class="mobexplorerow row" data-aos="fade-up" data-aos-duration="450">
+                <div class="mobitem col">
+                  <img src="src\Images\noodles.png" alt="">
+                  <p>Chinese</p>
+                </div>
+                <div class="mobitem col">
+                  <img src="src\Images\pizza.png" alt="">
+                  <p>Biryani</p>
+                </div>
+                <div class="mobitem col vmore">
+                  <img src="src\Images\viewmore.png" alt="">
+                  <p>Show more</p>
+                </div>
+                <div class="mobitem col additionalmenus">
+                  <img src="src\Images\maincourse.png" alt="">
+                  <p>Main Course</p>
+                </div>
+              </div>
+              <br>
+              <div class="mobexplorerow row" data-aos="fade-up" data-aos-duration="400">
+                <div class="mobitem col additionalmenus">
+                  <img src="src\Images\pizza.png" alt="">
+                  <p>Pizza</p>
+                </div>
+                <div class="mobitem col additionalmenus">
+                  <img src="src\Images\shawarma.png" alt="">
+                  <p>Shawarma</p>
+                </div>
+                <div class="mobitem col additionalmenus">
+                  <img src="src\Images\samosas.png" alt="">
+                  <p>Snacks</p>
+                </div>
+
+              </div>
+              <br>
+              <div class="mobexplorerow row" data-aos="fade-up" data-aos-duration="40">
+                <div class="mobitem col additionalmenus">
+                  <img src="src\Images\milkshakes.png" alt="">
+                  <p>Milkshake</p>
+                </div>
+                <div class="mobitem col additionalmenus">
+                  <img src="src\Images\desserts.png" alt="">
+                  <p>Dessert</p>
+                </div>
+                <div class="mobitem col additionalmenus">
+                  <img src="src\Images\icecream.png" alt="">
+                  <p>Ice cream</p>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="mobexploreContainer pcexplore">
+          <div class="mobmenuExplore" id="exploreSection">
+            <div class="mob-exploretop" data-aos="zoom-in" data-aos-duration="250">
+              <h2>Eat what makes you happy</h2>
+            </div>
+            <div class="mobexplore-wrapper">
+              <div class="mobexplorerow row" data-aos="fade-up" data-aos-duration="350">
+                <div class="mobitem col">
+                  <img src="src\Images\dosas.png" alt="">
+                  <p>Dosa</p>
+                </div>
+                <div class="mobitem col">
+                  <img src="src\Images\bread.png" alt="">
+                  <p>Breakfast</p>
+                </div>
+                <div class="mobitem col">
+                  <img src="src\Images\arabic.png" alt="">
+                  <p>Starters</p>
+                </div>
+                <div class="mobitem col">
+                  <img src="src\Images\noodles.png" alt="">
+                  <p>Chinese</p>
+                </div>
+              </div>
+              <br>
+              <div class="mobexplorerow row" data-aos="fade-up" data-aos-duration="550">
+                <div class="mobitem col">
+                  <img src="src\Images\mobtrend1.png" alt="">
+                  <p>Biryani</p>
+                </div>
+                <div class="mobitem col">
+                  <img src="src\Images\maincourse.png" alt="">
+                  <p>Main Course</p>
+                </div>
+                <div class="mobitem col">
+                  <img src="src\Images\pizza.png" alt="">
+                  <p>Pizza</p>
+                </div>
+                <div class="mobitem col vmore">
+                  <img src="src\Images\viewmore.png" alt="">
+                  <p>Show more</p>
+                </div>
+                <div class="mobitem col additionalmenus">
+                  <img src="src\Images\shawarma.png" alt="">
+                  <p>Shawarma</p>
+                </div>
+              </div>
+              <br>
+              <div class="mobexplorerow row" data-aos="fade-up" data-aos-duration="750">
+                <div class="mobitem col additionalmenus">
+                  <img src="src\Images\samosas.png" alt="">
+                  <p>Snacks</p>
+                </div>
+                <div class="mobitem col additionalmenus">
+                  <img src="src\Images\milkshakes.png" alt="">
+                  <p>Milkshake</p>
+                </div>
+                <div class="mobitem col additionalmenus">
+                  <img src="src\Images\desserts.png" alt="">
+                  <p>Dessert</p>
+                </div>
+                <div class="mobitem col additionalmenus">
+                  <img src="src\Images\icecream.png" alt="">
+                  <p>Ice cream</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section class="testimonialSection" id="testimonialSection">
+      <div class="testimonialContainer">
+        <div class="testimonialRow">
+          <div class="card-deck row">
+            <h1 class="cardhead"  data-aos="zoom-in" data-aos-duration="200">What our <span class="primaryColor">Customers </span>say!</h1>
+            <div class="card col-xl-4 col-lg-4 col-md-4 col-sm-4">
+              <div class="card-body">
+                <h5 class="card-title" data-aos="fade-up" data-aos-duration="350">Sam</h5>
+                <div class="card-img" data-aos="zoom-in" data-aos-duration="550">
+                  <img class="card-img-top" src="src\Images\mobtest2.png" alt="Card image cap">
+                </div>
+                <br>
+                <img src="src\Images\quotmark.png" style="width:5vw" alt="" data-aos="fade-up" data-aos-duration="600">
+                <p class="card-text" data-aos="fade-up" data-aos-duration="700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half"></i>
+                </p>
+              </div>
+            </div>
+            <div class="card col-xl-4 col-lg-4 col-md-4 col-sm-4">
+              <div class="card-body">
+                <h5 class="card-title" data-aos="fade-up" data-aos-duration="350">Lisa</h5>
+                <div class="card-img" data-aos="zoom-in" data-aos-duration="550">
+                  <img class="card-img-top" src="src\Images\mobtest1.png" alt="Card image cap">
+                </div>
+                <br>
+                <img src="src\Images\quotmark.png" style="width:5vw" alt="" data-aos="fade-up" data-aos-duration="600">
+                <p class="card-text" data-aos="fade-up" data-aos-duration="700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half"></i>
+                </p>
+              </div>
+            </div>
+            <div class="card col-xl-4 col-lg-4 col-md-4 col-sm-4">
+              <div class="card-body">
+                <h5 class="card-title" data-aos="fade-up" data-aos-duration="350">Pete</h5>
+                <div class="card-img" data-aos="zoom-in" data-aos-duration="550">
+                  <img class="card-img-top" src="src\Images\mobtest3.png" alt="Card image cap">
+                </div>
+                <br>
+                <img src="src\Images\quotmark.png" style="width:5vw" alt="" data-aos="fade-up" data-aos-duration="600">
+                <p class="card-text" data-aos="fade-up" data-aos-duration="700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="contactNav">
+        <a href="#contactSection">Contact</a>
+      </div>
+    </section>
+    <section class="mob-testimonial mobtestSection" id="mobtestSection">
+      <div class="mob-testimonialContainer">
+        <div class="mobHead">
+          <h3 data-aos="fade-up" data-aos-duration="350">Customer's Review</h3>
+          <h4 data-aos="zoom-in" data-aos-duration="550"> <span class="primaryColor">What they say!</span></h4>
+        </div>
+        <div id="carouselExampleFade" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+          <div class="card-deck carousel-inner testimonialCarousel">
+            <div class="card carousel-item active">
+              <div class="mobcard">
+                <div class="card-body">
+                  <h5 class="card-title" data-aos="fade-up" data-aos-duration="350">Lisa</h5>
+                  <div class="card-img" data-aos="zoom-in" data-aos-duration="550">
+                    <img class="card-img-top" src="src\Images\mobtest1.png" alt="Card image cap">
+                  </div>
+                  <img src="src\Images\quotmark.png" style="width:5vw" alt="" data-aos="fade-up" data-aos-duration="600">
+                  <p class="card-text" data-aos="fade-up" data-aos-duration="700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <p class="stars" data-aos="zoom-in" data-aos-duration="750">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card carousel-item">
+              <div class="mobcard">
+                <div class="card-body">
+                  <h5 class="card-title" data-aos="fade-up" data-aos-duration="350">Sam</h5>
+                  <div class="card-img" data-aos="zoom-in" data-aos-duration="550">
+                    <img class="card-img-top" src="src\Images\mobtest2.png" alt="Card image cap">
+                  </div>
+                  <img src="src\Images\quotmark.png" style="width:5vw" alt="" data-aos="fade-up" data-aos-duration="600">
+                  <p class="card-text" data-aos="fade-up" data-aos-duration="700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <p class="stars" data-aos="zoom-in" data-aos-duration="750">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card carousel-item">
+              <div class="mobcard">
+                <div class="card-body">
+                  <h5 class="card-title" data-aos="fade-up" data-aos-duration="350">Pete</h5>
+                  <div class="card-img" data-aos="zoom-in" data-aos-duration="550">
+                    <img class="card-img-top" src="src\Images\mobtest3.png" alt="Card image cap">
+                  </div>
+                  <img src="src\Images\quotmark.png" style="width:5vw" alt="" data-aos="fade-up" data-aos-duration="600">
+                  <p class="card-text" data-aos="fade-up" data-aos-duration="700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <p class="stars" data-aos="zoom-in" data-aos-duration="750">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contactSection" id="contactSection">
+      <div class="contactContainer">
+        <!-- <div class="contactTop">
+          <h1>FoodSite</h1>
+        </div> -->
+        <br>
+        <div class="contactRows row">
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 contactCols">
+            <div class="contactContentone">
+              <h3>About us</h3>
+              <ul>
+                <li>Who We are</li>
+                <li>Blog</li>
+                <li>Careers</li>
+                <li>Contact</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 contactCols">
+            <div class="contactContenttwo">
+              <div class="contactsTopHalf">
+                <h5>FOR RESTAURANTS</h5>
+                <p>Add Restaurant</p>
+              </div>
+              <div class="contactsbottomHalf">
+                <h5>FOR ENTERPRISES</h5>
+                <p>FoodSite for Work</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 contactCols">
+            <div class="contactContentthree">
+              <div class="contactsTopHalf">
+                <h3>Social Links</h3>
+                <span><i class="fab fa-facebook"></i></span>
+                <span><i class="fab fa-twitter"></i></span>
+                <span><i class="fab fa-instagram"></i></span>
+              </div>
+              <div class="contactsbottomHalf">
+                <img src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png" alt="">
+                <img src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png" alt="">
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+    <section class="mobContactSection" id="mobcontactSection">
+      <div class="mobcontactContainer">
+        <div class="mobcontactCols">
+          <div class="aboutus">
+            <h3>About us</h3>
+            <div class="aboutusContent">
+              <ul>
+                <li>Who We are</li>
+                <li>Blog</li>
+                <li>Careers</li>
+                <li>Contact</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="mobcontactCols">
+          <div class="contactsTopHalf">
+            <h5>FOR RESTAURANTS</h5>
+            <p>Add Restaurant</p>
+          </div>
+          <div class="contactsbottomHalf">
+            <h5>FOR ENTERPRISES</h5>
+            <p>FoodSite for Work</p>
+          </div>
+        </div>
+        <div class="mobcontactCols downloads">
+          <div class="contactsTopHalf">
+            <img src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png" alt="">
+          </div>
+          <div class="contactsbottomHalf">
+            <img src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png" alt="">
+          </div>
+        </div>
+        <br>
+        <div class="mobcontactCols-footer">
+          <span><i class="fab fa-facebook"></i></span>
+          <span><i class="fab fa-twitter"></i></span>
+          <span><i class="fab fa-instagram"></i></span>
+        </div>
+      </div>
+    </section>
+    <!-- JavaScript -->
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="src\script.js" type="text/javascript"></script>
+  </body>
+</html>
