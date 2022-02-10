@@ -340,7 +340,7 @@ body::-webkit-scrollbar {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 45px;
+     /*     padding-top: 45px; */
   }
   .active{
     background-color: #fff;
