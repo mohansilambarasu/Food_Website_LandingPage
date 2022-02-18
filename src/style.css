@@ -340,7 +340,7 @@ body::-webkit-scrollbar {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-     /*     padding-top: 45px; */
+    padding-top: 45px;
   }
   .active{
     background-color: #fff;
@@ -700,7 +700,7 @@ body{
   color: #142F43 !important;
 }
 .card:hover{
-  background-color: #142F43;
+  background-color: #142F43 !important;
 }
 .card-title{
   color: #000;
@@ -739,6 +739,7 @@ body{
   transform: translateX(20px);
   animation: dealanimate 1.3s linear infinite;
 }
+
 @keyframes dealanimate {
   0%{
     transform: translateX(20px) translateY(5px) rotate(-25deg);
@@ -788,9 +789,6 @@ body{
 .mobfoodigomenus{
   display: none;
 }
-/* .mobmenuslink{
-  display: none;
-} */
 @media screen and (max-width: 768px){
   .foodigomenusContainer {
     margin-left: auto;
@@ -800,9 +798,9 @@ body{
   }
 }
 @media screen and (max-width: 576px){
-  .card-title {
+  /* .card-title {
       color: #fff !important;
-  }
+  } */
   .mobfoodigomenus{
     display: flex;
     flex-direction: column;
@@ -980,8 +978,6 @@ body{
 .mobcard{
   transition: 0.6s;
   transform: scale(1);
-  background-color: #142F43;
-  box-shadow: 2px 2px 2px 2px #142F43;
 }
 .mobcard:hover{
   transform: scale(1);
@@ -996,8 +992,8 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
 }
-.mobcard .card-body p{
-  color: #fff;
+.mobcard .card-body p,.mobcard .card-body h5{
+  color: #142F43;
 }
 .mobHead{
   padding: 3vh;
@@ -1011,6 +1007,10 @@ body{
   align-items: center;
   position: relative;
   left: auto;
+}
+.mob-testimonialContainer .card{
+  background-color: #D9D7F1;
+  border-radius: 15px !important;
 }
 .trendingContainer{
   padding: 3vh;
@@ -1240,9 +1240,6 @@ body{
   }
   .mobmenuContainer{
     padding: 45px;
-  }
-  .mob-exploretop{
-    padding: 75px;
   }
   .mobitem p{
     padding-top: 2vh;
